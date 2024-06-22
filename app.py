@@ -9,7 +9,7 @@ import random
 
 app = Flask(__name__)
 
-nltk.download('wordnet')
+nltk.download('punkt')
 lemmatizer = WordNetLemmatizer()
 model = load_model('chatassistant_model.h5')
 intents = json.loads(open('intents.json').read())
